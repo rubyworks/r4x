@@ -1,0 +1,13 @@
+= R4X
+
+R4X is a pure-Ruby implementation of E4X.
+
+== STATUS
+
+This implementation follows the E4X specification to the letter.
+At thei point it is only about half complete.
+
+One difficulty with the implementation is that Ruby can not
+support the exact syntax E4X designates, so an alternative
+needs to be used --which has not yet been fully settled upon.
+
