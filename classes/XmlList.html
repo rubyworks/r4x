@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang='en'>
+  <head>
+    <title>: XmlList [Anise API]</title>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <link href='../rdoc-style.css' media='screen' rel='stylesheet' type='text/css'>
+    <script type='text/javascript'>
+      //<![CDATA[
+        function popupCode(url) {
+          window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+        }
+        
+        function toggleCode(id) {
+          var code = document.getElementById(id)
+        
+          code.style.display = code.style.display != 'block' ? 'block' : 'none'
+          return true
+        }
+        
+        // Make codeblocks hidden by default
+        document.writeln('<' + 'style type="text/css">.method .source pre { display: none }<\/style>')
+      //]]>
+    </script>
+  </head>
+  <body class='page'>
+    <div class='class' id='wrapper'>
+      <div class='header'>
+        <h1 class='name'>
+          <span class='type'>Class</span>
+          XmlList
+        </h1>
+        <ol class='paths'>
+          <li>
+            <a href="../files/lib/r4x/e4x_rb.html">lib/r4x/e4x.rb</a>
+          </li>
+          <li class='other'>
+            <a href="../files/lib/r4x/xmllist_delegate_rb.html">lib/r4x/xmllist_delegate.rb</a>
+          </li>
+          <li>
+            <a class='show' href='#' onclick='this.parentNode.parentNode.className += " expanded"; this.parentNode.removeChild(this); return false'>show all</a>
+          </li>
+        </ol>
+        <div class='parent'>
+          Parent:
+          <strong>Object</strong>
+        </div>
+      </div>
+      <div id='content'>
+        <div id='text'>
+          <div id='description'>
+            <p>
+            <a href="XmlList.html">XmlList</a>
+            </p>
+          </div>
+          <div id='method-list'>
+            <h2>Methods</h2>
+            <h3>public class</h3>
+            <ol>
+              <li><a href="#M000003">__new</a></li>
+              <li><a href="#M000002">new</a></li>
+              <li><a href="#M000004">new</a></li>
+            </ol>
+            <h3>public instance</h3>
+            <ol>
+              <li><a href="#M000016">*</a></li>
+              <li><a href="#M000015">&lt;&lt;</a></li>
+              <li><a href="#M000018">[]</a></li>
+              <li><a href="#M000019">[]=</a></li>
+              <li><a href="#M000017">_</a></li>
+              <li><a href="#M000007">__class</a></li>
+              <li><a href="#M000006">__list</a></li>
+              <li><a href="#M000008">__target_object</a></li>
+              <li><a href="#M000009">__target_object=</a></li>
+              <li><a href="#M000010">__target_property</a></li>
+              <li><a href="#M000011">__target_property=</a></li>
+              <li><a href="#M000014">each</a></li>
+              <li><a href="#M000020">method_missing</a></li>
+              <li><a href="#M000005">self</a></li>
+              <li><a href="#M000013">to_i</a></li>
+              <li><a href="#M000012">to_s</a></li>
+            </ol>
+          </div>
+          <div id='section'>
+            <div id='class-list'>
+              <h2>Classes and Modules</h2>
+              Class <a href="XmlList/XmlListDelegate.html" class="link">XmlList::XmlListDelegate</a><br />
+            </div>
+            <div id='methods'>
+              <h2>Public class methods</h2>
+              <div class='public-class method' id='method-M000003'>
+                <a name='M000003'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>__new</span>
+                  <span class='arguments'>( xd=[], to=nil, tp=nil )</span>
+                </div>
+                <div class='description'>
+                  <p>
+                  Alias for <a href="XmlList.html#M000002">new</a>
+                  </p>
+                </div>
+              </div>
+              <div class='public-class method' id='method-M000002'>
+                <a name='M000002'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>new</span>
+                  <span class='arguments'>( xd=[], to=nil, tp=nil )</span>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000002-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000002-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 179</span>&#x000A;    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">new</span>( <span class="ruby-identifier">xd</span>=[], <span class="ruby-identifier">to</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">tp</span>=<span class="ruby-keyword kw">nil</span> )&#x000A;      <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">xd</span>&#x000A;      <span class="ruby-keyword kw">when</span> <span class="ruby-constant">XmlList</span>&#x000A;        <span class="ruby-identifier">xd</span>&#x000A;      <span class="ruby-keyword kw">else</span>&#x000A;        <span class="ruby-identifier">__new</span>( <span class="ruby-identifier">xd</span>, <span class="ruby-identifier">to</span>, <span class="ruby-identifier">tp</span> )&#x000A;      <span class="ruby-keyword kw">end</span>&#x000A;    <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-class method' id='method-M000004'>
+                <a name='M000004'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>new</span>
+                  <span class='arguments'>( xd=[], to=nil, tp=nil )</span>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000004-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000004-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 189</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>( <span class="ruby-identifier">xd</span>=[], <span class="ruby-identifier">to</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">tp</span>=<span class="ruby-keyword kw">nil</span> )&#x000A;    <span class="ruby-ivar">@self</span> = <span class="ruby-constant">XmlListDelegate</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword kw">self</span>)&#x000A;    <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">xd</span>&#x000A;    <span class="ruby-keyword kw">when</span> []&#x000A;      <span class="ruby-ivar">@list</span> = []&#x000A;      <span class="ruby-ivar">@target_object</span> = <span class="ruby-identifier">to</span>&#x000A;      <span class="ruby-ivar">@target_property</span> = <span class="ruby-identifier">tp</span>&#x000A;    <span class="ruby-keyword kw">when</span> <span class="ruby-constant">Xml</span>&#x000A;      <span class="ruby-ivar">@list</span> = [<span class="ruby-identifier">xd</span>]&#x000A;      <span class="ruby-ivar">@target_object</span> = <span class="ruby-identifier">xd</span>.<span class="ruby-identifier">self</span>.<span class="ruby-identifier">parent</span>&#x000A;      <span class="ruby-ivar">@target_property</span> = <span class="ruby-identifier">xd</span>.<span class="ruby-identifier">self</span>.<span class="ruby-identifier">name</span>&#x000A;    <span class="ruby-keyword kw">else</span>&#x000A;      <span class="ruby-identifier">xd</span> = <span class="ruby-constant">REXML</span><span class="ruby-operator">::</span><span class="ruby-constant">Document</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">%{&lt;_&gt;#{xd}&lt;/_&gt;}</span>).<span class="ruby-identifier">root</span>&#x000A;      <span class="ruby-identifier">a</span> = []; <span class="ruby-identifier">xd</span>.<span class="ruby-identifier">each</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">n</span><span class="ruby-operator">|</span> <span class="ruby-identifier">a</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">Xml</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">n</span>) }&#x000A;      <span class="ruby-ivar">@list</span> = <span class="ruby-identifier">a</span>&#x000A;      <span class="ruby-ivar">@target_object</span> = <span class="ruby-keyword kw">nil</span>&#x000A;      <span class="ruby-ivar">@target_property</span> = <span class="ruby-keyword kw">nil</span>&#x000A;    <span class="ruby-keyword kw">end</span>&#x000A;  <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <h2>Public instance methods</h2>
+              <div class='public-instance method' id='method-M000016'>
+                <a name='M000016'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>*</span>
+                  <span class='arguments'>()</span>
+                </div>
+                <div class='description'>
+                  <p>
+                  XPath for all elements.
+                  </p>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000016-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000016-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 241</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-operator">*</span> ; <span class="ruby-ivar">@self</span>.<span class="ruby-identifier">get</span>(<span class="ruby-value str">'*'</span>) ; <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000015'>
+                <a name='M000015'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>&lt;&lt;</span>
+                  <span class='arguments'>( n )</span>
+                </div>
+                <div class='description'>
+                  <p>
+                  Shortcut for add.
+                  </p>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000015-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000015-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 236</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-operator">&lt;&lt;</span>( <span class="ruby-identifier">n</span> )&#x000A;    <span class="ruby-ivar">@self</span>.<span class="ruby-identifier">add</span>( <span class="ruby-identifier">n</span> )&#x000A;  <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000018'>
+                <a name='M000018'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>[]</span>
+                  <span class='arguments'>( v )</span>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000018-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000018-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 246</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-operator">[]</span>( <span class="ruby-identifier">v</span> )&#x000A;    <span class="ruby-ivar">@self</span>.<span class="ruby-identifier">get</span>( <span class="ruby-identifier">v</span> )&#x000A;  <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000019'>
+                <a name='M000019'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>[]=</span>
+                  <span class='arguments'>( prop, v )</span>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000019-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000019-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 250</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-operator">[]=</span>( <span class="ruby-identifier">prop</span>, <span class="ruby-identifier">v</span> )&#x000A;    <span class="ruby-ivar">@self</span>.<span class="ruby-identifier">put</span>( <span class="ruby-identifier">prop</span> , <span class="ruby-identifier">v</span> )&#x000A;  <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000017'>
+                <a name='M000017'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>_</span>
+                  <span class='arguments'>()</span>
+                </div>
+                <div class='description'>
+                  <p>
+                  Shortcut for XPath &#8217;@*&#8217;, meaning all attributes.
+                  </p>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000017-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000017-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 244</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">_</span> ; <span class="ruby-ivar">@self</span>.<span class="ruby-identifier">get</span>(<span class="ruby-value str">'@*'</span>) ; <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000007'>
+                <a name='M000007'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>__class</span>
+                  <span class='arguments'>()</span>
+                </div>
+                <div class='description'>
+                  <p>
+                  This is how the delegate accesses the node classification.
+                  </p>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000007-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000007-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 216</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">__class</span> ; <span class="ruby-identifier">:xmllist</span> ; <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000006'>
+                <a name='M000006'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>__list</span>
+                  <span class='arguments'>()</span>
+                </div>
+                <div class='description'>
+                  <p>
+                  This is how the delegate accesses the node.
+                  </p>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000006-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000006-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 213</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">__list</span>  ; <span class="ruby-ivar">@list</span> ; <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000008'>
+                <a name='M000008'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>__target_object</span>
+                  <span class='arguments'>()</span>
+                </div>
+                <div class='description'>
+                  <p>
+                  This is how the delegate accesses the node classification.
+                  </p>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000008-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000008-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 219</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">__target_object</span> ; <span class="ruby-ivar">@target_object</span> ; <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000009'>
+                <a name='M000009'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>__target_object=</span>
+                  <span class='arguments'>(to)</span>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000009-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000009-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 220</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">__target_object=</span>(<span class="ruby-identifier">to</span>) ; <span class="ruby-ivar">@target_object</span> = <span class="ruby-identifier">to</span> ; <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000010'>
+                <a name='M000010'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>__target_property</span>
+                  <span class='arguments'>()</span>
+                </div>
+                <div class='description'>
+                  <p>
+                  This is how the delegate accesses the node classification.
+                  </p>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000010-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000010-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 223</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">__target_property</span> ; <span class="ruby-ivar">@target_property</span> ; <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000011'>
+                <a name='M000011'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>__target_property=</span>
+                  <span class='arguments'>(tp)</span>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000011-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000011-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 224</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">__target_property=</span>(<span class="ruby-identifier">tp</span>) ; <span class="ruby-ivar">@target_property</span> = <span class="ruby-identifier">tp</span> ; <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000014'>
+                <a name='M000014'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>each</span>
+                  <span class='arguments'>(&amp;blk)</span>
+                </div>
+                <div class='description'>
+                  <p>
+                  each
+                  </p>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000014-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000014-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 233</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">each</span>(<span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>) ; <span class="ruby-ivar">@list</span>.<span class="ruby-identifier">each</span>(<span class="ruby-operator">&amp;</span><span class="ruby-identifier">blk</span>) ; <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000020'>
+                <a name='M000020'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>method_missing</span>
+                  <span class='arguments'>( sym, *args )</span>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000020-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000020-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 255</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">method_missing</span>( <span class="ruby-identifier">sym</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span> )&#x000A;    <span class="ruby-identifier">sym</span> = <span class="ruby-identifier">sym</span>.<span class="ruby-identifier">to_s</span>&#x000A;<span class="ruby-identifier">p</span> <span class="ruby-identifier">sym</span>&#x000A;    <span class="ruby-keyword kw">if</span> (<span class="ruby-identifier">args</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>)&#x000A;      <span class="ruby-keyword kw">self</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">send</span>( <span class="ruby-identifier">sym</span>, <span class="ruby-identifier">args</span> )&#x000A;    <span class="ruby-keyword kw">else</span>&#x000A;      <span class="ruby-keyword kw">self</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">send</span>( <span class="ruby-identifier">sym</span> )&#x000A;    <span class="ruby-keyword kw">end</span>&#x000A;  <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000005'>
+                <a name='M000005'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>self</span>
+                  <span class='arguments'>()</span>
+                </div>
+                <div class='description'>
+                  <p>
+                  This is how to access the underlying <a href="Xml.html">Xml</a> object,
+                  i.e. via the delegate.
+                  </p>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000005-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000005-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 210</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span> ; <span class="ruby-ivar">@self</span> ; <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000013'>
+                <a name='M000013'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>to_i</span>
+                  <span class='arguments'>()</span>
+                </div>
+                <div class='description'>
+                  <p>
+                  ?
+                  </p>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000013-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000013-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 230</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_i</span>() <span class="ruby-ivar">@list</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">to_i</span>; <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+              <div class='public-instance method' id='method-M000012'>
+                <a name='M000012'>      </a>
+                <div class='synopsis'>
+                  <span class='name'>to_s</span>
+                  <span class='arguments'>()</span>
+                </div>
+                <div class='description'>
+                  <p>
+                  Important for this to work in string interpolation.
+                  </p>
+                </div>
+                <div class='source'>
+                  <a class='source-toggle' href='#' onclick="toggleCode('M000012-source'); return false">
+                    [show source]
+                  </a>
+                  <pre id='M000012-source'><span class="ruby-comment cmt"># File lib/r4x/e4x.rb, line 227</span>&#x000A;  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_s</span>() <span class="ruby-ivar">@list</span>.<span class="ruby-identifier">to_s</span> ; <span class="ruby-keyword kw">end</span></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id='footer-push'></div>
+    </div>
+    <div id='footer'>
+      <a href="http://github.com/mislav/hanna/tree/master"><strong>Hanna</strong> RDoc template</a>
+    </div>
+  </body>
+</html>
