@@ -1,0 +1,18 @@
+--- 
+title  : R4X
+suite  : rubyworks
+summary: E4X for Ruby
+contact: Trans <transfire@gmail.com>
+license: MIT
+authors: Thomas Sawyer
+created: 2008-01-27
+
+description:
+   R4X is an implementation of E4X for Ruby.
+
+resources:
+  homepage : http://rubyworks.github.com/
+  subscribe: rubyworks-mailinglist@rubyforge.org
+
+copyright:
+  Copyright (c) 2008 Thomas Sawyer
