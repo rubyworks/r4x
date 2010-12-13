@@ -1,0 +1,12 @@
+#!mast -x Syckfile -x Profile .ruby bin lib man spec test [A-Z]*
+.ruby
+lib/r4x/e4x.rb
+lib/r4x/emcascript.rb
+lib/r4x/qname.rb
+lib/r4x/xml_delegate.rb
+lib/r4x/xmllist_delegate.rb
+PROFILE
+LICENSE
+README
+HISTORY
+VERSION

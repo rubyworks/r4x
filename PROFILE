@@ -1,18 +1,18 @@
 --- 
 title  : R4X
-suite  : rubyworks
 summary: E4X for Ruby
 contact: Trans <transfire@gmail.com>
-license: MIT
+license: Apache 2.0
 authors: Thomas Sawyer
+company: CubyWorks
 created: 2008-01-27
 
 description:
    R4X is an implementation of E4X for Ruby.
 
 resources:
-  homepage : http://rubyworks.github.com/
-  subscribe: rubyworks-mailinglist@rubyforge.org
+  home: http://rubyworks.github.com/r4x
+  code: http://github.com/rubyworks/r4x
 
 copyright:
   Copyright (c) 2008 Thomas Sawyer
